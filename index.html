@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aesthetic Editor Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="cursor"></div>
+    <div class="grain"></div>
+
+    <nav class="fixed top-0 w-full p-10 flex justify-between items-start z-[100] mix-blend-difference text-white">
+        <div class="flex flex-col">
+            <span class="font-bold tracking-tighter text-2xl uppercase">Vision.</span>
+            <span class="text-[10px] tracking-widest opacity-50">SELECTED WORKS &copy;2026</span>
+        </div>
+        <div class="flex gap-12 text-[10px] uppercase tracking-widest">
+            <a href="#work" class="nav-link">Work</a>
+            <a href="#services" class="nav-link">Services</a>
+            <a href="#contact" class="nav-link border-b border-white pb-1">Contact</a>
+        </div>
+    </nav>
+
+    <main class="perspective-stage">
+        <section id="work" class="hero h-[150vh] relative flex flex-col items-center pt-32">
+            <div class="sticky-container sticky top-32 w-full flex flex-col items-center">
+                <h1 class="hero-title text-[14vw] serif italic leading-none tracking-tighter">
+                    The <span class="text-stone-300">Edit.</span>
+                </h1>
+
+                <div class="card-3d-wrapper w-[82vw] md:w-[55vw] aspect-video relative group mt-[-4vw]">
+                    <div class="card-3d bg-stone-200 overflow-hidden shadow-2xl rounded-sm">
+                        <video autoplay muted loop class="w-full h-full object-cover scale-110 group-hover:scale-100 transition-transform duration-1000">
+                            <source src="https://assets.mixkit.co/videos/preview/mixkit-top-view-of-a-person-writing-on-a-notebook-41142-large.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="horizontal-section h-[360vh] bg-stone-50">
+            <div class="sticky top-0 h-screen flex items-center overflow-hidden">
+                <div class="filmstrip flex gap-24 px-[15vw]">
+                    <div class="film-item w-[78vw] md:w-[30vw] flex-shrink-0 mt-20">
+                        <div class="h-[40vh] bg-stone-200 mb-6 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1493612276216-ee3925520721?q=80&w=1000" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="serif text-4xl italic">L'Eclat</h3>
+                        <p class="text-[10px] uppercase tracking-widest text-stone-400 mt-2">Commercial / 2026</p>
+                    </div>
+                    <div class="film-item w-[78vw] md:w-[30vw] flex-shrink-0">
+                        <div class="h-[40vh] bg-stone-200 mb-6 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=1000" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="serif text-4xl italic">Noir Rhythm</h3>
+                        <p class="text-[10px] uppercase tracking-widest text-stone-400 mt-2">Documentary / 2025</p>
+                    </div>
+                    <div class="film-item w-[78vw] md:w-[30vw] flex-shrink-0 mt-40">
+                        <div class="h-[40vh] bg-stone-200 mb-6 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?q=80&w=1000" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="serif text-4xl italic">The Cut</h3>
+                        <p class="text-[10px] uppercase tracking-widest text-stone-400 mt-2">Experimental / 2026</p>
+                    </div>
+                    <div class="film-item w-[78vw] md:w-[30vw] flex-shrink-0 mt-8">
+                        <div class="h-[40vh] bg-stone-200 mb-6 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?q=80&w=1000" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="serif text-4xl italic">Pulse Frames</h3>
+                        <p class="text-[10px] uppercase tracking-widest text-stone-400 mt-2">Music Video / 2026</p>
+                    </div>
+                    <div class="film-item w-[78vw] md:w-[30vw] flex-shrink-0 mt-28">
+                        <div class="h-[40vh] bg-stone-200 mb-6 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1536240478700-b869070f9279?q=80&w=1000" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="serif text-4xl italic">Afterlight</h3>
+                        <p class="text-[10px] uppercase tracking-widest text-stone-400 mt-2">Brand Story / 2024</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services-section py-32 px-[8vw] bg-stone-100">
+            <div class="max-w-6xl mx-auto">
+                <p class="reveal-item text-[10px] uppercase tracking-[0.35em] text-stone-500">Studio Services</p>
+                <h2 class="reveal-item serif text-[clamp(2.4rem,6vw,5.8rem)] italic leading-[0.9] mt-3">
+                    Precision Cuts For<br>Modern Campaigns.
+                </h2>
+
+                <div class="services-grid grid md:grid-cols-3 gap-6 mt-14">
+                    <article class="service-card reveal-item">
+                        <p class="service-index">01</p>
+                        <h3 class="serif text-4xl italic mt-4">Narrative Edit</h3>
+                        <p class="service-copy">Story shaping, rhythm passes, and multi-format delivery for long and short form films.</p>
+                    </article>
+                    <article class="service-card reveal-item">
+                        <p class="service-index">02</p>
+                        <h3 class="serif text-4xl italic mt-4">Color + Texture</h3>
+                        <p class="service-copy">Cinematic grades, grain balancing, and look development tuned for each platform.</p>
+                    </article>
+                    <article class="service-card reveal-item">
+                        <p class="service-index">03</p>
+                        <h3 class="serif text-4xl italic mt-4">Sound Polish</h3>
+                        <p class="service-copy">Dialogue cleanup, mix prep, and impact moments that support every visual beat.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="workflow-section py-32 px-[8vw] bg-white">
+            <div class="max-w-5xl mx-auto">
+                <p class="reveal-item text-[10px] uppercase tracking-[0.35em] text-stone-400">Workflow</p>
+                <h2 class="reveal-item serif text-[clamp(2.2rem,5vw,4.8rem)] italic leading-[0.95] mt-3">
+                    From Raw Footage<br>To Final Master.
+                </h2>
+
+                <div class="workflow-stack mt-14">
+                    <article class="workflow-step reveal-item">
+                        <span class="step-tag">Discovery</span>
+                        <div>
+                            <h3 class="serif text-3xl italic">Edit Direction</h3>
+                            <p class="step-copy">References, mood, and message are mapped into an edit blueprint with pacing notes.</p>
+                        </div>
+                        <p class="step-time">Week 1</p>
+                    </article>
+                    <article class="workflow-step reveal-item">
+                        <span class="step-tag">Craft</span>
+                        <div>
+                            <h3 class="serif text-3xl italic">Assembly + Refinement</h3>
+                            <p class="step-copy">Scene building, transition design, typography overlays, and timing revisions in loops.</p>
+                        </div>
+                        <p class="step-time">Week 2</p>
+                    </article>
+                    <article class="workflow-step reveal-item">
+                        <span class="step-tag">Delivery</span>
+                        <div>
+                            <h3 class="serif text-3xl italic">Master + Exports</h3>
+                            <p class="step-copy">Final QC, color-safe exports, and channel-ready versions for web, social, and broadcast.</p>
+                        </div>
+                        <p class="step-time">Week 3</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="cta-section min-h-screen px-[8vw] py-24 bg-stone-900 text-stone-100 flex items-center">
+            <div class="max-w-6xl mx-auto w-full grid lg:grid-cols-[1.3fr,1fr] gap-14 items-end">
+                <div>
+                    <p class="reveal-item text-[10px] uppercase tracking-[0.35em] text-stone-400">Bookings Open / Summer 2026</p>
+                    <h2 class="reveal-item serif text-[clamp(2.7rem,7vw,7.5rem)] leading-[0.88] italic mt-4">
+                        Let's Cut<br>Something Bold.
+                    </h2>
+                    <p class="reveal-item max-w-xl mt-8 text-stone-300">
+                        Available for documentary features, branded films, and music visual campaigns.
+                    </p>
+                    <a href="mailto:hello@visionedit.studio" class="reveal-item inline-flex mt-10 border border-stone-200/70 px-8 py-4 uppercase tracking-[0.2em] text-[11px] transition hover:bg-stone-100 hover:text-stone-900">
+                        Start A Project
+                    </a>
+                </div>
+                <div class="contact-panel reveal-item">
+                    <p class="panel-line"><span>Base</span><span>Mumbai / Remote</span></p>
+                    <p class="panel-line"><span>Timeline</span><span>2-6 Weeks</span></p>
+                    <p class="panel-line"><span>Formats</span><span>16:9, 9:16, 1:1</span></p>
+                    <p class="panel-line"><span>Mail</span><span>hello@visionedit.studio</span></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
